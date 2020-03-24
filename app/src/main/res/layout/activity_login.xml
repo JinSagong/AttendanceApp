@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    tools:context=".view.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/loginInterfaceLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginInterfaceLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/loginInfoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginProgressBar"
+        app:layout_constraintWidth_percent="0.8">
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_default"
+            android:layout_marginTop="@dimen/dimen_default"
+            android:layout_marginBottom="@dimen/dimen_default"
+            android:background="@android:drawable/editbox_background_normal"
+            android:ellipsize="end"
+            android:hint="@string/hint_login"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textSize_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/loginButtonImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loginButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_default"
+            android:background="@drawable/item_button"
+            android:maxLines="1"
+            android:text="@string/login_button"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/loginEditText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/loginInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_default"
+        android:gravity="center"
+        android:text="@string/login_info"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginInterfaceLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dialog_box"
+    android:padding="@dimen/dimen_default">
+
+    <TextView
+        android:id="@+id/fpCheck1DialogTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_default"
+        android:text="@string/fp_check_search"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize_normal"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fpCheck1DialogEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/fpCheck1DialogEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_default"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="@string/hint_fp_check_input"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="@dimen/dimen_half"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:textSize="@dimen/textSize_label"
+        app:layout_constraintBottom_toTopOf="@id/fpCheck1DialogRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fpCheck1DialogTitleTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fpCheck1DialogRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_default"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fpCheck1DialogEditText" />
+
+    <TextView
+        android:id="@+id/fpCheck1DialogDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_default"
+        android:layout_marginTop="@dimen/dimen_double"
+        android:layout_marginEnd="@dimen/dimen_default"
+        android:layout_marginBottom="@dimen/dimen_double"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fpCheck1DialogEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

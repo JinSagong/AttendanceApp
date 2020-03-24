@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">전교인출석체크</string>
+
+    <!-- Splash Activity -->
+    <string name="auto_login">자동으로 로그인 되었습니다.</string>
+    <string name="update_download">업데이트 버전 다운로드 완료</string>
+    <string name="update_cancel">업데이트가 취소되었습니다.</string>
+    <string name="update_install">설치</string>
+
+    <!-- NotFound Activity -->
+    <string name="not_found">접속량이 많거나 출석체크서버가 열려있지 않습니다.</string>
+
+    <!-- Login Activity -->
+    <string name="login_info">한 번 로그인하면 다음부터 자동으로 로그인됩니다.</string>
+    <string name="hint_login">아이디를 입력해주세요.</string>
+    <string name="login_wrong">아이디가 올바르지 않습니다.</string>
+    <string name="login_button">로그인</string>
+
+    <!-- Logout Dialog -->
+    <string name="logout_description">로그아웃 하시겠습니까?</string>
+    <string name="logout_cancel">취소</string>
+    <string name="logout_done">로그아웃</string>
+
+    <!-- Condition Dialog -->
+    <string name="condition_fp_fruits">열매관리는 출석관리를 완료하신 후에 관리하실 수 있습니다.</string>
+    <string name="condition_offline">우한폐렴으로 인해 가정에서 예배를 드리므로 당분간 온라인 출석만 관리할 수 있습니다.</string>
+    <string name="condition_online">우한폐렴으로 인한 온라인 예배 출석을 관리하던 곳입니다. 지금은 이용할 수 없습니다.</string>
+    <string name="condition_time">아직 출석체크를 할 수 없습니다.</string>
+    <string name="condition_done">확인</string>
+
+    <!-- Check Activity -->
+    <string name="check_posting">출석정보를 전송하는 중입니다.</string>
+    <string name="check_done">출석체크가 완료되었습니다.</string>
+    <string name="check_failure">출석정보를 전송할 수 없습니다.\n네트워크 확인 후 다시 시도해 주세요.</string>
+
+    <!-- FpCheck Activity -->
+    <string name="fp_check_etc">유치/유년/초등/중등/고등/기타</string>
+    <string name="fp_check_search">추가 출석체크</string>
+    <string name="fp_check_add">+</string>
+    <string name="fp_check_delete">×</string>
+    <string name="fp_check_reason">헌신사유를 작성해주세요.</string>
+    <string name="hint_fp_check_input">이름을 입력하세요.</string>
+    <string name="fp_check_dup">이미 명단에 이름이 있습니다.</string>
+    <string name="fp_check_do_search">검색하여 이름을 추가하세요.</string>
+    <string name="fp_check_not_found">검색 결과가 없습니다.</string>
+    <string name="fp_check_believer">영접자</string>
+    <string name="fp_check_word_movement">말씀운동</string>
+    <string name="fp_check_done">확인</string>
+    <string name="fp_check_change_status">관리 결과가 변경되었습니다.\n열매관리를 한 번 더 확인해주세요.</string>
+
+    <!-- AddAttendance Dialog -->
+    <string name="add_description">당분간 추가기능은 사용할 수 없습니다.</string>
+    <string name="add_done">확인</string>
+
+    <!-- dupAttendance Dialog -->
+    <string name="dup_description">이곳은 유치/유년/초등/중등/고등/기타 추가란입니다.\n그래도 추가하시겠습니까?</string>
+    <string name="dup_cancel">취소</string>
+    <string name="dup_done">추가</string>
+
+    <!-- postAttendance Dialog -->
+    <string name="post_description">출석체크를 완료하시겠습니까?</string>
+    <string name="post_cancel">취소</string>
+    <string name="post_done">확인</string>
+
+    <!-- fpFruits Dialog -->
+    <string name="fp_fruits_believer">영접자</string>
+    <string name="fp_fruits_preacher">전도자</string>
+    <string name="fp_fruits_teacher">사역자</string>
+    <string name="fp_fruits_age">나이</string>
+    <string name="fp_fruits_phone">전화번호</string>
+    <string name="fp_fruits_re_meet">재만남</string>
+    <string name="fp_fruits_frequency">만난횟수</string>
+    <string name="fp_fruits_place">장소</string>
+    <string name="fp_fruits_done">완료</string>
+    <string name="fp_fruits_no_preacher">전도자를 입력해주세요.</string>
+    <string name="fp_fruits_no_teacher">사역자를 입력해주세요.</string>
+    <string name="fp_fruits_no_believer">영접자를 입력해주세요.</string>
+    <string name="fp_fruits_multiple">영접자는 한 칸에 한 명만 입력해주세요.</string>
+    <string name="fp_fruits_reason1">영접자 기록시 전도자가 정확히 기록되어야 합니다.</string>
+    <string name="fp_fruits_reason2">말씀운동 기록시 사역자가 정확히 기록되어야 합니다.</string>
+    <string name="fp_fruits_post_description">현장전도 열매 결과를 전송하시겠습니까?</string>
+
+    <!-- backAttendance Dialog -->
+    <string name="back_description">작성중인 내용이 저장되지 않습니다.</string>
+    <string name="back_cancel">취소</string>
+    <string name="back_done">확인</string>
+
+    <!-- Menu titles -->
+    <string name="menu_logout">로그아웃</string>
+    <string name="menu_refresh">새로고침</string>
+    <string name="menu_check">출석체크</string>
+    <string name="menu_fp_check">결과전송</string>
+    <string name="menu_add">추가</string>
+
+    <!-- Activity labels -->
+    <string name="title_activity_splash">@string/app_name</string>
+    <string name="title_activity_not_found">@string/app_name</string>
+    <string name="title_activity_login">@string/app_name</string>
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="title_activity_logs">@string/app_name</string>
+    <string name="title_activity_selection">SelectionActivity</string>
+    <string name="title_activity_check">CheckActivity</string>
+    <string name="title_activity_fp_check">FpCheckActivity</string>
+</resources>

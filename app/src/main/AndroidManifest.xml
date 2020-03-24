@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jin.attendance_archive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".view.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.NotFoundActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_not_found" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.LogsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_logs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.SelectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.CheckActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_check"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.FpCheck1Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fp_check"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.FpCheck2Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fp_check"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="GROUP">
+        <item>선택</item>
+        <item>교역자</item>
+        <item>장로</item>
+        <item>안수집사</item>
+        <item>권사</item>
+        <item>서리집사(남)</item>
+        <item>서리집사(여)</item>
+        <item>권찰</item>
+        <item>성도(남)</item>
+        <item>성도(여)</item>
+        <item>청년</item>
+        <item>대학</item>
+    </string-array>
+
+    <string-array name="cat1">
+        <item>선택</item>
+        <item>1지역</item>
+        <item>2지역</item>
+        <item>3지역</item>
+    </string-array>
+
+    <string-array name="cat2">
+        <item>선택</item>
+        <item>1지역</item>
+        <item>2지역</item>
+        <item>3지역</item>
+        <item>4지역</item>
+        <item>5지역</item>
+        <item>6지역</item>
+    </string-array>
+
+    <string-array name="cat3_1">
+        <item>선택</item>
+        <item>북삼고</item>
+        <item>포항전자여고</item>
+        <item>산동고</item>
+        <item>석적고</item>
+        <item>인동고</item>
+        <item>오상고</item>
+        <item>구미여고</item>
+        <item>상모고</item>
+        <item>전자공고</item>
+        <item>명인정보고</item>
+        <item>군위고</item>
+        <item>경구고</item>
+        <item>구미고</item>
+        <item>형곡고</item>
+        <item>김천예고</item>
+        <item>사곡고</item>
+        <item>경북외고</item>
+        <item>금오고</item>
+    </string-array>
+
+    <string-array name="cat3_2">
+        <item>선택</item>
+        <item>진평중</item>
+        <item>인동중</item>
+        <item>형곡중</item>
+        <item>상모중</item>
+        <item>장곡중</item>
+        <item>오태중</item>
+        <item>북삼중</item>
+        <item>신평중</item>
+        <item>옥계동부중</item>
+        <item>형남중</item>
+        <item>옥계해마루중</item>
+        <item>금오중</item>
+        <item>천생중</item>
+        <item>성주명인중</item>
+        <item>인평중</item>
+        <item>율곡중</item>
+        <item>송정여중</item>
+    </string-array>
+
+    <string-array name="cat4_1">
+        <item>선택</item>
+        <item>북삼/벽진</item>
+        <item>인평/약목/농소</item>
+        <item>오태</item>
+        <item>오산</item>
+        <item>왕산/상모</item>
+        <item>정수/사곡</item>
+        <item>옥계동부/해마루/황상/옥계/양포</item>
+        <item>금오/형곡/형남/신기</item>
+        <item>원남/문장/선주/도산</item>
+        <item>인동/구평/진평/천생/구평남부</item>
+        <item>석적/대교</item>
+    </string-array>
+
+    <string-array name="cat4_2">
+        <item>선택</item>
+        <item>북삼/벽진</item>
+        <item>인평/약목/농소</item>
+        <item>오태</item>
+        <item>오산</item>
+        <item>정수/사곡</item>
+        <item>옥계동부/해마루/황상/옥계/양포/왕산/상모</item>
+        <item>금오/형곡/형남/신기</item>
+        <item>원남/문장/선주/도산</item>
+        <item>인동/구평/진평/천생/구평남부</item>
+        <item>석적/대교</item>
+    </string-array>
+
+    <string-array name="cat5">
+        <item>선택</item>
+        <item>믿음반(4세)</item>
+        <item>소망반(5세)</item>
+        <item>사랑반(6세)</item>
+        <item>충성반(7세)</item>
+    </string-array>
+
+    <string-array name="cat6">
+        <item>선택</item>
+        <item>일반</item>
+    </string-array>
+</resources>

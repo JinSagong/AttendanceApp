@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="dimen_default">16dp</dimen>
+    <dimen name="dimen_half">8dp</dimen>
+    <dimen name="dimen_double">32dp</dimen>
+
+    <dimen name="size_identifier">25dp</dimen>
+    <dimen name="height_line">1.5dp</dimen>
+
+    <dimen name="textSize_label">20sp</dimen>
+    <dimen name="textSize_normal">16sp</dimen>
+    <dimen name="textSize_small">13sp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

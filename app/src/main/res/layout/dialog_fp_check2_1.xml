@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dialog_box"
+    android:padding="@dimen/dimen_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fpCheck2Dialog1TitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_default"
+            android:padding="@dimen/dimen_default"
+            android:text="@string/fp_check_believer"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize_normal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input1Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input1Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input2Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1TitleTextView">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_believer"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fpCheck2Dialog1Input1EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@null"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/dimen_half"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/textSize_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input2Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1SearchLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input1Layout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_preacher"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fpCheck2Dialog1Input2EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@null"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/dimen_half"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/textSize_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1SearchLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input3Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input2Layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fpCheck2Dialog1RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:paddingStart="@dimen/dimen_default"
+                android:paddingEnd="@dimen/dimen_default"
+                app:layout_constrainedHeight="true"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/fpCheck2Dialog1DescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input3Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input4Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1SearchLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_teacher"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fpCheck2Dialog1Input3EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@null"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/dimen_half"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/textSize_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input4Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input5Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input3Layout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_age"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fpCheck2Dialog1Input4EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@null"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="@dimen/dimen_half"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/textSize_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input5Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1Input6Layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input4Layout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_phone"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fpCheck2Dialog1Input5EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@null"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="@dimen/dimen_half"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/textSize_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fpCheck2Dialog1Input6Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/fpCheck2Dialog1DoneTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input5Layout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_default"
+                android:text="@string/fp_fruits_re_meet"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/textSize_normal"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/fpCheck2Dialog1Input6CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_default"
+                android:layout_weight="2"
+                android:padding="@dimen/dimen_half" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fpCheck2Dialog1DoneTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_default"
+            android:text="@string/fp_fruits_done"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fpCheck2Dialog1Input6Layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

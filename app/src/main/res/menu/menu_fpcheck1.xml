@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jin.attendance_archive.CheckActivity">
+    <item
+        android:id="@+id/actionFpAdd"
+        android:orderInCategory="100"
+        android:title="@string/menu_add"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionFpCheck1"
+        android:orderInCategory="200"
+        android:title="@string/menu_fp_check"
+        app:showAsAction="ifRoom" />
+</menu>
