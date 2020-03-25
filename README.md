@@ -25,3 +25,4 @@ This is an application that helps check the attendance of worship service in the
 * Anko (deprecated)
 * Socket
 * Material Design
+* [Google play in-app update](https://developer.android.com/guide/playcore/in-app-updates)
